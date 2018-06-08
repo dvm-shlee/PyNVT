@@ -1,0 +1,10 @@
+*.pyc
+*.whl
+.idea/
+.idea/*
+dist/
+dist/*
+build/
+build/*
+PyNVT.egg-info/
+PyNVT.egg-info/*
