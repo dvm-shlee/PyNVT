@@ -11,8 +11,8 @@ __version__ = re.search(
     io.open('pynvt/__init__.py', encoding='utf_8_sig').read()
     ).group(1)
 
-__author__ = 'SungHo Lee'
-__email__ = 'shlee@unc.edu'
+__author__ = 'SungHo Lee, Woomi Ban'
+__email__ = 'shlee@unc.edu, banwoomi@email.unc.edu'
 
 setup(name='PyNVT',
       version=__version__,
@@ -22,8 +22,14 @@ setup(name='PyNVT',
       url=None,
       license='GNLv3',
       packages=find_packages(),
-      #install_requires=['',
-      #                  ],
+      install_requires=['pandas',
+                        'matplotlib',
+                        'scipy',
+                        'scikit-image',
+                        'sklearn',
+                        'nibabel',
+                        'numpy'
+                       ],
       scripts=['PyNVT/pynvt',
               ],
       classifiers=[
@@ -42,7 +48,7 @@ setup(name='PyNVT',
             # Specify the Python version you support here. In particular, ensure
             # that you indicate whether you support Python 2, Python 3 or both
             'Programming Language :: Python :: 2.7',
+            'Programming Language :: Python :: 3.7',
       ],
-      keywords = 'Python Neuroimaging Visualization Tools'
-     )
-
+      keywords='Python Neuroimaging Visualization Tools'
+      )
